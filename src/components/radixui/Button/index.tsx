@@ -1,12 +1,13 @@
-import { Button, ButtonProps } from '@headlessui/react';
+import { ButtonHTMLAttributes } from 'react';
 import { buttonStyles } from '../../lib/buttonStyle';
 
-type Props = ButtonProps & {
+//NOTE - RadixUIにButtonが存在しないので、デフォルトのHTMLのbutton要素を拡張する
+type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   color?: 'primary' | 'secondary';
   outlined?: boolean;
 };
 
-export function HeadlessUIButton({
+export function RadixUIButton({
   children,
   className,
   color,
@@ -14,11 +15,11 @@ export function HeadlessUIButton({
   ...other
 }: Props) {
   return (
-    <Button
+    <button
       {...other}
       className={`${className ?? ''} ${buttonStyles({ color, outlined })}`}
     >
       {children}
-    </Button>
+    </button>
   );
 }
