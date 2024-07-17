@@ -17,7 +17,7 @@ export default meta;
 
 export const Default: StoryObj<typeof ReactAreaButton> = {
   args: {
-    children: 'RadixUIButton',
+    children: 'ReactAreaButton',
     outlined: false,
     color: 'primary',
   },
