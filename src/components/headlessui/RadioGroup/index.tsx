@@ -16,7 +16,7 @@ const radioButtonStyles = tv({
   slots: {
     base: 'flex gap-2 items-center justify-center',
     radio:
-      'group h-[34px] max-w-60 min-w-[112px] flex gap-2 items-center p-2 rounded border border-qunasys-primary bg-white data-[checked]:bg-qunasys-primary data-[checked]:border-transparent',
+      'group h-[34px] max-w-60 min-w-[112px] flex gap-2 items-center p-2 rounded border border-qunasys-primary bg-white cursor-pointer focus:outline-none data-[focus]:outline-1 data-[focus]:outline-blue-500  data-[checked]:bg-qunasys-primary data-[checked]:border-transparent',
     circle: 'w-4 h-4 border border-qunasys-primary bg-white rounded-full',
     textStyle:
       'text-xs font-normal text-qunasys-primary group-data-[checked]:text-white',
