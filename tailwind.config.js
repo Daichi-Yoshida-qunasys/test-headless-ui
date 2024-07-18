@@ -9,6 +9,7 @@ export default {
         'qunasys-green': '#569700',
         'qunasys-orange': '#DF5B10',
         'qunasys-red': '#ad1818',
+        'qunasys-yellow': '#E4B50E',
         'gray-100': '#f8f8f8',
         'gray-200': '#f4f4f4',
         'gray-300': '#e9e9e9',
